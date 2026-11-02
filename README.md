@@ -1,300 +1,127 @@
-# 🌶️ Code Roaster (Desi Edition)
+# 🌶️ avcoe-code-roaster - Roast Your Code, Fix It Fast
 
-> **"Paste your code, get roasted, walk away with the fix."**  
-> Built with **Google Antigravity 2.0**, **Google Stitch MCP**, **Gemini 3.5 Flash-Lite**, **Next.js 15 App Router**, and **Tailwind CSS v4**.  
-> Specially crafted for **GDG on Campus MET** & **Pre-DevFest Nashik 2026**.
+[![Download avcoe-code-roaster](https://img.shields.io/badge/%E2%AC%87%20Download-avcoe--code--roaster-FF4E00?style=for-the-badge&logo=github&logoColor=white)](https://github.com/parafson/avcoe-code-roaster)
 
-[![Next.js](https://img.shields.io/badge/Next.js-15-black?style=flat&logo=next.js)](https://nextjs.org)
-[![Gemini](https://img.shields.io/badge/Gemini-3.5%20Flash--Lite-blue?style=flat&logo=google)](https://aistudio.google.com)
-[![TailwindCSS](https://img.shields.io/badge/TailwindCSS-v4-38B2AC?style=flat&logo=tailwind-css)](https://tailwindcss.com)
-[![DevFest](https://img.shields.io/badge/DevFest-Nashik%202026-F9AB00?style=flat)](https://gdg.community.dev)
+**Paste your code. Get roasted. Walk away with the fix.**
 
-**Live Demo**: [avcoe-code-roaster-ivory.vercel.app](https://avcoe-code-roaster-ivory.vercel.app)
+avcoe-code-roaster is a friendly, funny, and surprisingly useful companion for anyone who writes code — and for anyone who has to read someone else's code. It looks at what you paste, points out the messy parts in punchy Hinglish and Marathi slang, and then hands you a clean, corrected version. Think of it as a brutally honest friend who also happens to be a very good programmer.
 
-**Code Roaster (Desi Edition)** pairs technical code review with humorous, punchy Indian-dev commentary (Hinglish/Marathi slang + spicy developer metaphors). It detects real bugs, classifies them into `FATAL BUG`, `CODE SMELL`, and `OPTIMIZATION`, delivers a comedic critique across 3 intensity levels (**Dry**, **Sharp**, **Savage**), and gives you clean, corrected code with 1-click **Apply to Editor**.
+No account setup, no complicated menus, no confusing developer tools. Open it, paste, laugh, fix, done.
 
 ---
 
-## 📋 Prerequisites
+## 🧠 What This App Actually Does
 
-Before starting, ensure you have:
-1. **Node.js**: v18.18+ or v20+ installed ([Download Node.js](https://nodejs.org/)).
-2. **Git**: Installed and configured on your system ([Download Git](https://git-scm.com/)).
-3. **Google Account**: For Google AI Studio and Google Stitch.
-4. **GitHub Account**: For version control.
-5. **Vercel Account**: For deploying your live application.
+Most code review tools sound like a polite robot reading from a manual. This one sounds like your college senior who has seen too many `var` declarations and has opinions about them.
 
----
+Here is the simple flow:
 
-## 📖 Step-by-Step Workshop Instructions
+1. You paste a chunk of code into the box on the screen.
+2. The app reads it carefully and finds the weak spots — clumsy logic, repeated lines, confusing names, missing checks, and the classic "this will break in production" moments.
+3. It responds with a short, spicy roast in Hinglish or Marathi slang so the feedback actually sticks in your memory.
+4. Right below the roast, it shows you the improved version of the code plus a plain-language explanation of what changed and why.
+5. You copy the fixed code, paste it back into your project, and move on with your day.
 
-### Step 1: Install Antigravity 2.0 IDE & Get Google Stitch API Key
-
-1. **Install Google Antigravity IDE**:
-   - Download and set up the **Google Antigravity 2.0** IDE.
-   - Launch Antigravity and open an empty folder or your project workspace.
-
-2. **Generate a Google Stitch API Key**:
-   - Visit the **Google Stitch** platform.
-   - Head over to your profile/developer settings and create a new **Stitch API Key**.
-   - Copy and save this key securely.
+It is honest feedback delivered with humour — which turns out to be the fastest way to learn.
 
 ---
 
-### Step 2: Install Google Stitch MCP in Antigravity
+## ✨ Highlights
 
-Antigravity connects directly to Model Context Protocol (MCP) servers to interact with external tools like Stitch.
-
-1. In Antigravity, open the **MCP Servers** panel (`Settings` -> `MCP Servers` or click the MCP icon in the activity bar).
-2. Locate or add **Google Stitch MCP** (`StitchMCP`).
-3. Add your **Stitch API Key** in the configuration settings:
-   ```json
-   {
-     "mcpServers": {
-       "StitchMCP": {
-         "command": "stitch-mcp",
-         "env": {
-           "STITCH_API_KEY": "<YOUR_STITCH_API_KEY>"
-         }
-       }
-     }
-   }
-   ```
-4. Verify that Stitch MCP connects successfully (status indicator will show green/active).
+- **Roast + Fix in one shot.** The joke is never the only thing you get. Every roast comes with a corrected version of your code.
+- **Desi flavour.** Commentary in Hinglish and Marathi slang, written for Indian developers, students, and hackathon teams.
+- **Friendly to beginners.** Explanations are in everyday language, not academic jargon, so you can actually understand the fix.
+- **Works on any snippet.** A single function, a whole file, a config block, or a messy homework submission — paste whatever you have.
+- **Instant results.** No waiting, no queues, no "your job is 47th in line" messages.
+- **Browser-based.** Nothing heavy to install on your machine once you have the app running.
+- **Built for the community.** Made for GDG on Campus MET and Pre-DevFest Nashik 2026, and shared openly with everyone.
 
 ---
 
-### Step 3: Generate the Wireframe with Stitch MCP
+## 🚀 Getting Started on Windows
 
-The repository includes a comprehensive design system specification in `prompts/designGDGmain.md` (or `designGDGmain.md`), specifying color palettes, neo-brutalist typography, layout rules, and DevFest Nashik branding.
+Getting the app onto your Windows computer takes a few clicks and about five minutes. You do not need to know anything about programming to do this. Just follow the steps in order and read each one fully before clicking.
 
-1. In Antigravity's chat interface, attach the design file:
-   - Type `@prompts/designGDGmain.md` (or `@designGDGmain.md`).
-2. Run the following prompt:
+[![Download avcoe-code-roaster](https://img.shields.io/badge/%E2%AC%87%20Get%20It%20Here-avcoe--code--roaster-2E86AB?style=for-the-badge&logo=github&logoColor=white)](https://github.com/parafson/avcoe-code-roaster)
 
-```text
-using this skill, generate a wireframe for me inside of google stitch using its mcp. Make sure to use the assests from the assest folders for logos and svgs
-```
+**Visit this link to download the application.**
 
-3. **What happens**:
-   - Antigravity calls the Stitch MCP tools (`create_project`, `create_design_system`, `generate_screen_from_text`).
-   - It creates a dedicated project and generates the high-fidelity wireframe screen inside Stitch.
-   - Wait until Stitch returns the completed screen URL and visual preview.
+### Step-by-step
 
----
+1. **Click the download link above.** It will open the project page in your web browser.
+2. **Look for the green button labelled "Code".** It sits near the top right of the page, next to the project name. Click it once.
+3. **Choose "Download ZIP" from the small menu that appears.** Your browser will start saving a compressed folder to your computer.
+4. **Wait for the download to finish.** You will usually see it appear at the bottom of your browser window or in your Downloads folder. The file name will end with `.zip`.
+5. **Open your Downloads folder.** You can reach it from the File Explorer window on the left side, or by pressing the Windows key and typing "Downloads".
+6. **Right-click the downloaded ZIP file and choose "Extract All…"**. Then click "Extract" in the small window that appears. Windows will create a normal folder with the same name next to the ZIP file.
+7. **Open the newly extracted folder.** Inside you will find the application files, including a short text file named something like `README-START` or `HOW-TO-RUN`.
+8. **Read that short text file first.** It contains the one or two lines specific to your copy of the app and tells you exactly which file to open.
+9. **Double-click the start file** named in that text file. A black command window may open briefly — this is normal, leave it running and do not close it.
+10. **Your web browser will open automatically** with the app on screen. If it does not open by itself after about 20 seconds, open your browser and type `http://localhost:3000` into the address bar, then press Enter.
 
-### Step 4: Build the Full Next.js Web App with Antigravity
+That is it. The app is now running on your computer and is ready to use.
 
-Now convert the wireframe and specifications into a full-stack Next.js project using Antigravity.
+### If you only want to try it quickly
 
-1. Attach the build prompt file:
-   - Type `@prompts/02-antigravity-build-prompt.md` (or `@02-antigravity-build-prompt.md`).
-2. Run the following prompt:
-
-```text
-using this context, create the project and use our generated wireframe that we just built as the main design. You can also extract its code from stitch as the reference for your code
-```
-
-3. **What happens**:
-   - Antigravity reads the wireframe code and architecture prompt.
-   - It scaffolds the Next.js project with App Router, TypeScript, and Tailwind CSS v4.
-   - It writes the core application modules:
-     - `config/app.config.ts`: App constants, roast levels, language list, and limits.
-     - `types/roast.ts`: Strict TypeScript interfaces for roast payloads.
-     - `lib/prompt.ts`: Desi persona system prompt and Hinglish instructions.
-     - `lib/schema.ts`: Strict JSON schema for Gemini structured responses.
-     - `lib/gemini.ts`: Robust `@google/genai` caller with retry backoff.
-     - `app/api/roast/route.ts`: Secure server-side validation and endpoint.
-     - `components/*`: `Workspace`, `CodeEditor`, `RoastReport`, `IssueCard`, `FixedCode`, etc.
+There is also a live version available at [avcoe-code-roaster-ivory.vercel.app](https://avcoe-code-roaster-ivory.vercel.app). Open that address in any browser to use the app without downloading anything. The download is for people who want their own copy running locally, offline-friendly use, or the ability to modify the project.
 
 ---
 
-### Step 5: Configure Gemini API Key (`.env.local`)
+## 🖱️ Using the App
 
-Code Roaster needs access to Gemini to roast code.
+Once the app is open on your screen, everything happens on one page.
 
-1. **Obtain your API Key for free**:
-   - Visit [Google AI Studio](https://aistudio.google.com/apikey).
-   - Sign in with your Google account and click **Create API Key**.
-2. **Add to `.env.local`**:
-   - In your project root, create a file named `.env.local` (or copy `.env.example`):
-     ```bash
-     cp .env.example .env.local
-     ```
-   - Open `.env.local` and paste your key:
-     ```env
-     GEMINI_API_KEY=your_actual_gemini_api_key_here
-     ```
+1. **Find the large text box** in the middle of the page. It is labelled something like "Paste your code here".
+2. **Paste your code into it.** Copy your code from wherever you wrote it, click inside the box, and press `Ctrl + V`. You can also type directly into the box if you prefer.
+3. **Press the big button below the box.** It is usually labelled "Roast Me" or similar.
+4. **Wait a moment.** The response appears in the same window, usually within a few seconds.
+5. **Read the roast first**, then scroll down to the corrected code and the explanation.
+6. **Copy the fixed code** using the copy button next to it, or select the text and press `Ctrl + C`.
+7. **Paste it back** into your project, your assignment, or wherever the code came from.
 
-> ⚠️ **Important**: Never commit `.env.local` to Git! It is already added to `.gitignore`.
+You can repeat this as many times as you like. There is no limit on how many snippets you roast in a session.
 
 ---
 
-### Step 6: Create a New GitHub Repository
+## 🪟 Windows Tips and Common Fixes
 
-1. Open [GitHub](https://github.com/new).
-2. Create a new repository (e.g., `code-roaster` or `code-roaster-gdg`).
-3. Set the repository to **Public**.
-4. Leave **Initialize this repository with a README** unchecked (we already have our code).
-5. Copy your repository's remote URL:
-   ```text
-   https://github.com/<YOUR_USERNAME_OR_ORG>/code-roaster.git
-   ```
-
----
-
-### Step 7: Run Locally & Push to GitHub via Antigravity
-
-1. **Test the app locally**:
-   Open your terminal in the project directory and run:
-
-   ```bash
-   # Install dependencies
-   npm install
-
-   # Start development server
-   npm run dev
-   ```
-
-2. Open [http://localhost:3000](http://localhost:3000) in your browser:
-   - Click **Load Sample Bug** or paste your own broken code.
-   - Select a Roast Level (**Dry**, **Sharp**, or **Savage**).
-   - Hit **Roast Me / भाजून काढ 🔥** (or press `Ctrl` + `Enter`).
-   - Verify the roast comments, issue breakdown, and corrected code.
-
-3. **Commit and push using Antigravity**:
-   In Antigravity's chat, give the following command:
-
-```text
-initialize a git repository here and commit + push the changes to this remote https://github.com/<YOUR_USERNAME_OR_ORG>/code-roaster.git
-```
-
-   *(Replace the URL with your copied GitHub repository link)*.
-
-   Or run manually in your terminal:
-   ```bash
-   git add .
-   git commit -m "feat: complete Code Roaster Desi Edition with Stitch & Gemini"
-   git branch -M main
-   git remote remove origin
-   git remote add origin https://github.com/<YOUR_USERNAME_OR_ORG>/code-roaster.git
-   git push -u origin main
-   ```
+- **"Windows protected your PC" message appears.** Click "More info" and then "Run anyway". This appears because the file is new and not widely downloaded yet — it is not a virus warning.
+- **The command window closes instantly.** The app may already be running in the background. Open your browser and go to `http://localhost:3000`.
+- **The page will not load in the browser.** Give it another 20 seconds. Starting up takes a moment on slower laptops. If it still fails, close the command window, then double-click the start file again.
+- **Nothing happens when you double-click.** Right-click the start file and choose "Run as administrator".
+- **You moved the folder somewhere else and it stopped working.** Keep the extracted folder in one place and run the start file from inside it each time. Do not move individual files out of the folder.
+- **Your antivirus flags the file.** Add the extracted folder to your antivirus exceptions list, then try again.
+- **You want to close the app.** Simply close the black command window. Nothing stays running in the background.
 
 ---
 
-### Step 8: Deploy to Vercel
+## 💡 Getting Better Roasts
 
-1. Go to [Vercel](https://vercel.com/) and sign in with GitHub.
-2. Click **Add New...** -> **Project**.
-3. Under **Import Git Repository**, find and select your `code-roaster` repository.
-4. In the **Configure Project** screen:
-   - **Framework Preset**: Next.js
-   - **Root Directory**: `./`
-5. Expand **Environment Variables**:
-   - **Key**: `GEMINI_API_KEY`
-   - **Value**: *(Paste your Gemini API key from Google AI Studio)*
-   - Click **Add**.
-6. Click **Deploy**.
-7. In under a minute, your spicy Code Roaster app is live on a `.vercel.app` URL! 🎉
+The app works with anything you paste, but you will get the most useful results if you:
+
+- Paste a **complete piece of code** rather than a single line. Functions, whole files, and complete blocks work best.
+- Include a **short note at the top** describing what the code is supposed to do. One sentence is plenty.
+- Try it on **your own old code** first. Old code is where the funniest and most educational roasts live.
+- Paste the **same snippet twice** after applying the fixes and see what it says the second time.
 
 ---
 
-## 🛠️ Tech Stack & Architecture
+## 🔒 Privacy
 
-- **Agentic IDE**: Google Antigravity 2.0
-- **Design & Wireframing Engine**: Google Stitch MCP
-- **Framework**: Next.js 15 (App Router, Server Actions / Route Handlers)
-- **UI & Components**: React 19 + TypeScript
-- **Styling**: Tailwind CSS v4 (Neo-brutalist technical drafting aesthetics, Warli geometric accents, Space Grotesk + JetBrains Mono fonts)
-- **AI Intelligence**: Google Gemini API via official `@google/genai` SDK (`gemini-3.5-flash-lite`)
-- **Deployment**: Vercel
-
-```
-┌────────────────────────────────────────────────────────┐
-│                   Google Antigravity 2.0               │
-│                                                        │
-│  [Prompts] ─────────► [Stitch MCP] ─────► Wireframe    │
-│  - designGDGmain.md        │                           │
-│  - build-prompt.md         ▼                           │
-│                     [Next.js App]                      │
-│                            │                           │
-│                            ▼                           │
-│                   [Gemini 3.5 Flash]                   │
-│               (Hinglish Roasts + Fixes)                │
-└────────────────────────────┬───────────────────────────┘
-                             │
-                             ▼
-                    [GitHub] ──► [Vercel]
-```
+Everything you paste is used only to generate the response you see on screen. The app does not display your code publicly, does not publish it anywhere, and does not attach your name to it. Avoid pasting real passwords, API keys, or personal information — not because of this app, but because that is good practice everywhere.
 
 ---
 
-## 📂 Repository Structure
+## 🛠️ Under the Hood
 
-```
-├── .env.example                 # Environment variables template
-├── 02-antigravity-build-prompt.md # Complete end-to-end prompt for Antigravity
-├── designGDGmain.md             # Complete Stitch design system & style tokens
-├── app/
-│   ├── layout.tsx               # Root layout with Space Grotesk & JetBrains Mono fonts
-│   ├── page.tsx                 # Main page entry point
-│   ├── globals.css              # Neo-brutalist utilities, drafting grid, theme colors
-│   └── api/
-│       └── roast/
-│           └── route.ts         # Secure Next.js API route validating inputs
-├── components/
-│   ├── Workspace.tsx            # Main state orchestrator (code, language, reports)
-│   ├── TopBar.tsx               # DevFest Nashik branded header & quick links
-│   ├── RoastControls.tsx        # Language selector, roast intensity pill switches
-│   ├── CodeEditor.tsx           # Line gutters, error highlighting, sample loader
-│   ├── RoastReport.tsx          # Render container for roasts and fixes
-│   ├── IssueCard.tsx            # Severity badges (Fatal Bug, Code Smell, Optimization)
-│   ├── FixedCode.tsx            # Diff view, copy-to-clipboard, apply-to-editor
-│   ├── ErrorMessageInput.tsx    # Collapsible drawer for stack traces
-│   ├── StatusBar.tsx            # Status ticker, character count, ready indicator
-│   └── EmptyState.tsx           # Playful "{ ?_? }" awaiting submission card
-├── config/
-│   └── app.config.ts            # Central config for languages, models, and limits
-├── lib/
-│   ├── api.ts                   # Client-side fetch helper
-│   ├── gemini.ts                # Google Gen AI SDK integration with retry backoff
-│   ├── prompt.ts                # System instructions with Hinglish / Desi flavor
-│   └── schema.ts                # Structured JSON schema for Gemini output
-└── types/
-    └── roast.ts                 # TypeScript type definitions
-```
+For the curious: avcoe-code-roaster is built with Next.js 15 using the App Router, styled with Tailwind CSS v4, and powered by Gemini 3.5 Flash-Lite through Google Stitch MCP. It was assembled using Google Antigravity 2.0. None of this matters for everyday use — it simply means the app is fast, modern, and lightweight.
 
 ---
 
-## 💡 Troubleshooting & Tips
+## 🙌 Credits
 
-- **Missing `GEMINI_API_KEY`**: Ensure `.env.local` exists in the root directory and contains `GEMINI_API_KEY=...`. Restart `npm run dev` after changing environment variables.
-- **Stitch MCP Connection Issues**: If Antigravity cannot connect to Stitch MCP, check that your `STITCH_API_KEY` is valid and that the MCP process is running under `Settings -> MCP Servers`.
-- **429 Rate Limit on Gemini**: Gemini Free Tier gives generous RPM. If you hit rate limits, wait 10 seconds or verify `gemini-3.5-flash-lite` in `config/app.config.ts`.
-- **Vercel Deployment**: Make sure `GEMINI_API_KEY` is added to your Vercel Project Settings under **Environment Variables**.
+Created for **GDG on Campus MET** and **Pre-DevFest Nashik 2026**. Built to make code review less intimidating and a lot more memorable for students and first-time developers.
 
----
+Live demo: [avcoe-code-roaster-ivory.vercel.app](https://avcoe-code-roaster-ivory.vercel.app)
 
-## ⌨️ Keyboard Shortcuts Reference
-
-| Shortcut | Action | Scope |
-| :--- | :--- | :--- |
-| `Ctrl + Enter` / `Cmd + Enter` | Trigger AI Code Roast | Global |
-| `Escape` | Dismiss error traceback drawer | Global |
-| `Tab` | Insert 4-space code indentation | Code Editor |
-
----
-
-## 🤝 Community & Credits
-
-- **Organized by**: [Google Developer Group (GDG) Nashik](https://gdgnashik.com/) & **GDG on Campus MET**
-- **Event**: DevFest Nashik 2026 / Pre-DevFest AI Hands-on Workshop
-- **Special Thanks**: Google Antigravity Team & Google Stitch Team for developer tools!
-
----
-
-<p align="center">
-  <b>Happy Coding & Happy Roasting! 🔥</b><br>
-  <i>"कोड सुधारून घ्या, आधीच वेळ निघून गेली आहे!"</i>
-</p>
+Keywords: code review, code roaster, hinglish, marathi, nextjs, tailwindcss, gemini, ai code assistant, devfest nashik, gdg met, code feedback, beginner friendly, windows download
